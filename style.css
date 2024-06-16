@@ -1,0 +1,182 @@
+/* Logo */
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    height: 20vw;
+}
+
+/* Boxen */
+.box-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30vw; /* Breite auf 30% der Viewport-Breite gesetzt */
+    min-width: 300px;
+    height: 80vh; /* Höhe proportional zur Breite gesetzt */
+    min-height: 50px;
+    background-color: #93a8a960;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #b0bdc1;
+    box-sizing: border-box;
+    margin: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Transition für alle Eigenschaften über 0.3 Sekunden */
+}
+
+.box:hover {
+    background-color: #3a61684c;
+    transform: scale(1.05); /* Vergrößert das Element um 20% */
+}
+
+/* Box Inhalt */
+a {
+    text-decoration: none;
+}
+
+.box h2 {
+    color: black;
+}
+
+.box p {
+    color: black;
+}
+
+/* Image Slider */
+.slider-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    width: 100%;
+    max-width: 600px; /* Maximale Breite des Sliders */
+}
+
+.image-slider {
+    width: 80%;
+    height: 20vw; /* Höhe des Bildbereichs */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.active {
+    opacity: 1;
+}
+
+body {
+    background-color: rgba(169, 205, 193, 0.783);
+}
+
+/* Kontakt */
+.maps {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.maps iframe {
+    border-radius: 10px;
+    height: 80% ;
+    width: 80% ;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Über mich */
+.überMich p {
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Portfolio */
+.Portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 50px;
+}
+
+
+
+@media (max-width: 480px) {
+    /* Für sehr kleine Bildschirme (Smartphones) */
+
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+        align-items: center; /* Zentriert die Boxen horizontal */
+        margin: 0 auto;
+    }
+
+    .box {
+        width: 90vw; /* Breite auf 90% der Viewport-Breite gesetzt */
+        height: 90vw; /* Höhe proportional zur Breite gesetzt */
+        min-height: 200px;
+        
+    }
+
+    .image-slider {
+        height: 20vh; /* Weitere Verringerung der Höhe des Bildbereichs */
+    }
+
+    .Portfolio {
+        grid-template-columns: 1fr; /* Eine Spalte für das Portfolio */
+    }
+
+    .überMich p {
+        font-size: 24px; /* Weitere Verkleinerung der Schriftgröße für "Über mich" */
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header.img {
+        width: 90vw;
+        text-align: center;
+    }
+}
