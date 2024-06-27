@@ -1,11 +1,13 @@
 /* Logo */
-img {
-    display: block;
-    margin: 0 auto;
+.Logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-    height: 5vw;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Boxen */
