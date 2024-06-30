@@ -166,6 +166,10 @@ footer {
 
     .Portfolio {
         grid-template-columns: 1fr; /* Eine Spalte für das Portfolio */
+        grid-gap: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+}
     }
 
     .überMich p {
