@@ -15,12 +15,12 @@ img {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    align-items: stretch;
+    
 }
 
 .box {
         width: 30vw;
-        height: 70vh; /* Höhe proportional zur Breite gesetzt */
+        height: 65vh; /* Höhe proportional zur Breite gesetzt */
         min-width: 300px;
         margin: 15px;
         min-height: 200px;
@@ -65,7 +65,7 @@ a {
 
 .image-slider {
     width: 80%;
-    height: 25vw; /* Höhe des Bildbereichs */
+    height: 20vw; /* Höhe des Bildbereichs */
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -147,17 +147,20 @@ footer {
     main{
         display: flex;
         justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
     .box-container {
         flex-direction: column;
         align-items: center; /* Zentriert die Boxen horizontal */
         margin: 0 auto;
+        width: 100%;
     }
 
     .box {
         width: 90vw; /* Breite auf 90% der Viewport-Breite gesetzt */
-        height: 90vw; /* Höhe proportional zur Breite gesetzt */
+        height: 90vh; /* Höhe proportional zur Breite gesetzt */
         min-height: 200px;
         
     }
@@ -195,4 +198,47 @@ footer {
         text-align: center;
     } 
     */
+
+@media (min-width: 950px) and (max-width: 1800px) {
+        /* Für mittlere Bildschirme  */
+    
+        main{
+            display: flex;
+            justify-content: center;
+        }
+    
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            align-items: stretch;
+            
+        }
+    
+        .box {
+            width: 30vw; /* Breite auf 90% der Viewport-Breite gesetzt */
+            height: 65vh; /* Höhe proportional zur Breite gesetzt */
+            min-height: 200px;
+            
+        }
+    
+        .image-slider {
+            height: 80%; /* Weitere Verringerung der Höhe des Bildbereichs */
+            min-height: 300px;
+        }
+    
+        .maps iframe {
+            border-radius: 10px;
+            height: 35vh ;
+            width: 70vw ;
+        }
+    
+        .Portfolio {
+            grid-template-columns: 1fr; /* Eine Spalte für das Portfolio */
+            grid-gap: 15px;
+            margin-left: 20px;
+            margin-right: 20px;
+    
+        }
+}
 
