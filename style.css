@@ -14,22 +14,24 @@ img {
 .box-container {
     display: flex;
     justify-content: space-evenly;
-   /* flex-wrap: wrap; */
+    width: 100%;
+    align-items: stretch;
 }
 
 .box {
-    width: 30vw; /* Breite auf 30% der Viewport-Breite gesetzt */
-    min-width: 300px;
-    height: 80vh; /* Höhe proportional zur Breite gesetzt */
-    min-height: 50px;
-    background-color: #93a8a960;
-    text-align: center;
-    align-items: center;
-    border: 1px solid #b0bdc1;
-    box-sizing: border-box;
-    margin: 15px;
-    border-radius: 10px;
-    transition: all 0.3s ease; /* Transition für alle Eigenschaften über 0.3 Sekunden */
+        width: 30vw;
+        height: 70vh; /* Höhe proportional zur Breite gesetzt */
+        min-width: 300px;
+        margin: 15px;
+        min-height: 200px;
+        background-color: #93a8a960;
+        text-align: center;
+        align-items: center;
+        border: 1px solid #b0bdc1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        transition: all 0.3s ease; /* Transition für alle Eigenschaften über 0.3 Sekunden */
+    
 }
 
 .box:hover {
@@ -58,12 +60,12 @@ a {
 
 .slider-wrapper {
     width: 100%;
-    max-width: 600px; /* Maximale Breite des Sliders */
+    max-width: 800px; /* Maximale Breite des Sliders */
 }
 
 .image-slider {
     width: 80%;
-    height: 20vw; /* Höhe des Bildbereichs */
+    height: 25vw; /* Höhe des Bildbereichs */
     position: relative;
     overflow: hidden;
     border-radius: 10px;
@@ -97,8 +99,8 @@ body {
 
 .maps iframe {
     border-radius: 10px;
-    height: 80% ;
-    width: 80% ;
+    height: 35vh ;
+    width: 25vw ;
 }
 
 .formContainer {
@@ -139,7 +141,7 @@ footer {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 950px) {
     /* Für sehr kleine Bildschirme (Smartphones) */
 
     main{
@@ -161,7 +163,14 @@ footer {
     }
 
     .image-slider {
-        height: 20vh; /* Weitere Verringerung der Höhe des Bildbereichs */
+        height: 80%; /* Weitere Verringerung der Höhe des Bildbereichs */
+        min-height: 300px;
+    }
+
+    .maps iframe {
+        border-radius: 10px;
+        height: 35vh ;
+        width: 70vw ;
     }
 
     .Portfolio {
@@ -169,11 +178,11 @@ footer {
         grid-gap: 15px;
         margin-left: 20px;
         margin-right: 20px;
-}
-    }
 
-    .überMich p {
-        font-size: 24px; /* Weitere Verkleinerung der Schriftgröße für "Über mich" */
+    }
+}
+   /* .überMich p {
+        font-size: 24px; /* Weitere Verkleinerung der Schriftgröße für "Über mich" 
     }
 
     header {
@@ -184,5 +193,6 @@ footer {
     header.img {
         width: 90vw;
         text-align: center;
-    }
+    } 
+    */
 
