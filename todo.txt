@@ -1,0 +1,4 @@
+Fix Iphone portfolio
+Bilder in Vollbild anzeigen beim anklicken
+Portfolio Menü unterteilen in Hund Katze Pferd
+img slider ganze box ausfüllen
