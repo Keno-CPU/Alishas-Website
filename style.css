@@ -141,7 +141,7 @@ footer {
 
 
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     /* Für sehr kleine Bildschirme (Smartphones) */
 
     main{
@@ -199,7 +199,7 @@ footer {
     } 
     */
 
-@media (min-width: 859px) and (max-width: 1800px) {
+@media (min-width: 900px) and (max-width: 1800px) {
         /* Für mittlere Bildschirme  */
     
         main{
