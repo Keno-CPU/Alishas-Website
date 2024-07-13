@@ -101,6 +101,7 @@ body {
     border-radius: 10px;
     height: 35vh ;
     width: 25vw ;
+   
 }
 
 .formContainer {
@@ -141,7 +142,7 @@ footer {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 700px) {
     /* Für sehr kleine Bildschirme (Smartphones) */
 
     main{
@@ -160,7 +161,7 @@ footer {
 
     .box {
         width: 90vw; /* Breite auf 90% der Viewport-Breite gesetzt */
-        height: 90vh; /* Höhe proportional zur Breite gesetzt */
+        height: 50vh; /* Höhe proportional zur Breite gesetzt */
         min-height: 200px;
         
     }
@@ -199,7 +200,7 @@ footer {
     } 
     */
 
-@media (min-width: 900px) and (max-width: 1800px) {
+@media (min-width: 700px) and (max-width: 1800px) {
         /* Für mittlere Bildschirme  */
     
         main{
@@ -230,7 +231,7 @@ footer {
         .maps iframe {
             border-radius: 10px;
             height: 35vh ;
-            width: 70vw ;
+            width: 25vw ;
         }
     
         .Portfolio {
