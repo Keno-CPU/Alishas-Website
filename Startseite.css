@@ -1,14 +1,5 @@
 /* Bild Über mich */
 
-.Bild_ÜM {
-    width: 80%;
-    height: 20vw; /* Höhe des Bildbereichs */
-    overflow: hidden;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .box img {
     max-width: 100%; 
