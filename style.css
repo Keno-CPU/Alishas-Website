@@ -1,13 +1,22 @@
 /* Logo */
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(169, 205, 193, 0.783);
+}
+
 .Logo {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 img {
     max-width: 100%;
     height: auto;
+    object-fit: contain;
 }
 
 /* Boxen */
@@ -21,7 +30,7 @@ img {
 .box {
         width: 30vw;
         height: 65vh; /* Höhe proportional zur Breite gesetzt */
-        min-width: 300px;
+        min-width: 200px;
         min-height: 200px;
         margin: 15px;
 
@@ -55,16 +64,6 @@ a {
 .box p {
     color: black;
 }
-
-
-
-
-
-body {
-    background-color: rgba(169, 205, 193, 0.783);
-}
-
-
 
 /* Über mich */
 .überMich p {
@@ -141,61 +140,6 @@ footer {
 
     }
 }
-   /* .überMich p {
-        font-size: 24px; /* Weitere Verkleinerung der Schriftgröße für "Über mich" 
-    }
+   
 
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    header.img {
-        width: 90vw;
-        text-align: center;
-    } 
-    */
-
-@media (min-width: 700px) and (max-width: 1800px) {
-        /* Für mittlere Bildschirme  */
-    
-        main{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-    
-        .box-container {
-            display: flex;
-            justify-content: space-evenly;
-            width: 100%;
-            align-items: stretch;
-            
-        }
-    
-        .box {
-            width: 30vw; /* Breite auf 90% der Viewport-Breite gesetzt */
-            height: 65vh; /* Höhe proportional zur Breite gesetzt */
-            min-height: 200px;
-            
-        }
-    
-        .image-slider {
-            height: 80%; /* Weitere Verringerung der Höhe des Bildbereichs */
-            min-height: 300px;
-        }
-    
-        .maps iframe {
-            border-radius: 10px;
-            height: 35vh ;
-            width: 25vw ;
-        }
-    
-        .Portfolio {
-            grid-gap: 15px;
-            margin-left: 20px;
-            margin-right: 20px;
-    
-        }
-}
 
