@@ -1,3 +1,9 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 #ft-form {
     font-family: inherit;
     font-size: 100%;
